@@ -1,0 +1,42 @@
+// class
+     abstraction  - data hiding
+	 encapsulation - combination of member variables and member functions
+	 constructor
+	    defalut
+		paramerized
+		copy  -> shallow copy / deep copy
+		move
+		
+	polymorphism 
+	
+	function overloading
+	function overriding
+	operatpr overloading
+	virtual functions
+	
+	inheritance
+single
+multiple
+multipath/multilevel
+hybrid
+heriarchical
+
+
+
+
+
+
+STL
+
+containers
+alogirithms   
+iterators  begin(), end(), rbegin(), rend()
+functors 
+
+Containers:
+
+Sequential containers -> vectors, deque, list, array
+Adaptive containers   ->  stack(lifo), queue(fifo)
+ordered constructor  -> map, set multimap, multiset
+Un-ordered containers -> unorderdmap, unorderset, unorderd-multimap, unordermultiset
+

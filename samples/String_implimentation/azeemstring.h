@@ -1,0 +1,50 @@
+#include<iostream>
+class String{
+   public:
+   String();
+   String(const char *ptr);
+   String(String &obj);
+   String(int num,char ch);
+   ~String();
+   String operator=(const char *ptr);
+  void operator=(String &obj);
+  char operator [](int index)const;
+  String operator+( String &obj);
+  void append(const char *ptr);
+  void append(String &obj);
+  void append(const char *ptr,int end);
+  void append(const String &obj,int end);
+  void append(const char *ptr,int start,int end);
+  void append(const String &obj,int start,int end);
+  int length()const;
+  int size()const;
+  void push_back(char ch);
+  void pop_back();  
+  char at(int index)const;
+  void erase(int start=0);   
+  void erase(int start,int count);
+  void clear();
+  char& back()const;
+  char& front()const;
+  String reverse();
+  String assign(const String& obj);
+  String assign(const String& obj,int start,int end=0);
+  String assign(int num,char ch);
+  friend String to_String(int num);
+  friend void swap(String &obj1,String &obj2);
+  friend std::ostream& operator<<(std::ostream &os, String &obj);
+  friend std::istream& operator>>(std::istream &is, String &obj);
+  friend std::istream& getline (std::istream& is, String& obj);
+  friend std::istream& getline (std::istream& is, String& obj,char ch);
+  friend int Atoi(String obj); 
+  String insert(int index,String &obj,int end=0);
+  String insert(int index,const char* ch,int end=0);
+  String insert(int index,const char* ch,int start,int end);
+  int copy(char * ptr,int count,int index=0);
+   private:
+  int find_size();
+  int strcmp(const String&obj);
+  char *c=nullptr;
+  int len=0;
+};
+//str.insert(6,str3,3,4);

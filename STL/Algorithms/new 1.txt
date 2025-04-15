@@ -1,0 +1,38 @@
+#include<iostream>   // shallow copy 
+using namespace std;
+
+class azeem
+{
+    protected:
+    int a, b,*ptr;
+    public:
+    azeem()
+    {
+       ptr=new int(10);
+       cout<<"Defalut address: "<<ptr<<endl;
+    }
+    
+    
+    azeem(int a, int b)
+    {
+        this->a=a;
+        this->b=b;
+        ptr=new int(10);
+        cout<<"parameter address: "<<ptr<<endl;
+    }
+    azeem(const azeem& obj)
+    {
+        a=obj.a;
+        b=obj.b;
+        ptr=new int(*obj.ptr);
+        
+        cout<<"Copy address: "<<ptr<<endl;
+    }
+    
+};
+
+int main()
+{
+    azeem a;
+    azeem b(a);
+}
