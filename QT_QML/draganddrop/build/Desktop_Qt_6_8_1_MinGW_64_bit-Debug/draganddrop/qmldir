@@ -1,0 +1,5 @@
+module draganddrop
+typeinfo appdraganddrop.qmltypes
+prefer :/qt/qml/draganddrop/
+Main 1.0 Main.qml
+
