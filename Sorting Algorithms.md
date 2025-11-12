@@ -60,6 +60,7 @@ iteration 9 : 0 1 2 3 4 5 6 7 8 9
 ## Selection Sort
 
 Selection Sort repeatedly finds the smallest (or largest) element from the unsorted portion of the array and swaps it with the first unsorted element. It’s simple, but not efficient for large datasets.
+
 ```cpp
 #include <iostream>
 
