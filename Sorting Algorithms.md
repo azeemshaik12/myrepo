@@ -2,7 +2,7 @@
 
 ## Topics
 1. [Bubble Sort](#bubble-sort)
-2. [Quick Sort](#quick-sort)
+2. [Selection Sort](#selection-sort)
 3. [Merge Sort](#merge-sort)
 
 ---
@@ -45,4 +45,4 @@ int main() {
     return 0;
 }
 ```
-## Quick Sort
+## Selection Sort
