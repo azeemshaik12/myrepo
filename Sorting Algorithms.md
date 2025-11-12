@@ -44,3 +44,5 @@ int main() {
     bubble_sort(arr2, 10);
     return 0;
 }
+```
+## Quick Sort
